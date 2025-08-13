@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For HER</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+   <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Trirong", serif;
+            background-image: url('background.jpg'); /* Replace with the image file provided */
+            background-color: #142919;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            color: #000000;
+        }
+
+        .header {
+            height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .header img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .header .heading {
+            font-size: 4rem;
+            font-weight: bold;
+            color: #FFFFFF;
+        }
+
+        .container {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .products {
+            display: flex;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            gap: 20px;
+            padding: 20px;
+            scroll-snap-type: x mandatory; /* Ensures that items snap into place */
+        }
+
+        .product-card {
+            background-color: #E5DDD2; /* Flour Dust */
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+            min-width: 100px;
+            height: 700px;
+            flex: 0 0 auto;
+            scroll-snap-align: start; /* Ensures items snap */
+            transition: transform 0.3s ease;
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 450px;
+        }
+
+        .product-card h3 {
+            font-size: 2rem;
+            margin: 15px;
+            color: #142919; /* Midnight Basil */
+        }
+
+        .product-card p {
+            margin: 0 15px 15px 15px;
+            color: #7F9C86; /* Olive Grove */
+        }
+
+        .product-card button {
+            background-color: #d9dbc4; /* Herb Garden */
+            color: #6d0e0e;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 10px;
+            cursor: pointer;
+            margin-bottom: 15px;
+        }
+
+        .product-card button:hover {
+            background-color: #313e34; /* Olive Grove */
+        }
+
+        /* Scrollbar Styling */
+        .products::-webkit-scrollbar {
+            height: 10px;
+        }
+
+        .products::-webkit-scrollbar-thumb {
+            background: #AFC0B3; /* Herb Garden */
+            border-radius: 5px;
+        }
+
+        .products::-webkit-scrollbar-thumb:hover {
+            background: #7F9C86;   /* Olive Grove */
+        }
+
+        .itemheading {
+            height: 50px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #bfae7e;
+        }
+
+        
+        footer {
+    height: 200px;
+    background-color: #142919;
+    color: #afc083;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-links {
+    flex: 1;
+}
+
+.footer-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin: 10px 0;
+}
+
+.footer-links a {
+    color: #afc083;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease, transform 0.2s ease, background-color 0.3s ease;
+    padding: 5px 10px;  /* Adds space around the text */
+    border-radius: 5px;  /* Rounded corners */
+}
+
+/* Hover effect for links */
+.footer-links a:hover,
+.footer-links a.highlight:hover {
+    color: #7f9c86;
+    transform: scale(1.1);  /* Slightly enlarges the text */
+    background-color: rgba(127, 156, 134, 0.3); /* Adds a background highlight */
+}
+
+/* Footer Logo Styling */
+.footer-bottom .logo img {
+    width: 150px; /* Adjust the width as needed */
+    margin: 10px auto;
+    display: block;
+  }
+  
+  /* Social Media Icons Styling */
+  .social-icons img {
+    width: 25px; /* Icon size */
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+  }
+  a{
+    text-decoration: none;
+    color: white;
+  }
+  .social-icons img:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+  }  
+  
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="bg.jpg" alt="Header Background"> <!-- Replace with the header image -->
+        <div class="heading">FOR HER</div>
+    </div>
+    <div class="itemheading">
+        <h1>Our Latest Collection</h1>
+    </div>
+    <div class="container">
+        <div class="products">
+            <!-- Product Card 1 -->
+            <div class="product-card">
+                <img src="top1.jpg" alt="top1"> <!-- Replace with product image -->
+                <h3>Majestic Waffled Elegance</h3>
+                <p>Rs.2,999.00</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <!-- Product Card 2 -->
+            <div class="product-card">
+                <img src="top2.jpg" alt="top 2"> <!-- Replace with product image -->
+                <h3>Graceful Velvet Cascade</h3>
+                <p>Rs.2,299.00</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <!-- Product Card 3 -->
+            <div class="product-card">
+                <img src="top3.jpg" alt="top 3"> <!-- Replace with product image -->
+                <h3>Ethereal Wool Charm</h3>
+                <p>Rs.8,999.00</p>
+                <a href="C:\Users\DELL\Downloads\HARP+TRY=FINAL\payment\payment\payment.html"><button>Add to Cart</button></a>
+            </div>
+
+            <!-- Product Card 4 -->
+            <div class="product-card">
+                <img src="top4.jpg" alt="top 4"> <!-- Replace with product image -->
+                <h3>Opulent Padded Symphony</h3>
+                <p>Rs.5,999.00</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <!-- Product Card 5 -->
+            <div class="product-card">
+                <img src="top5.jpg" alt="top 5"> <!-- Replace with product image -->
+                <h3>Regal Aesthetic Muse</h3>
+                <p>Rs.4,899.00</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <!-- Product Card 6 -->
+            <div class="product-card">
+                <img src="top6.jpg" alt="top 6"> <!-- Replace with product image -->
+                <h3>Collared Sophistication</h3>
+                <p>Rs.3,999.00</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+          <div class="footer-section">
+            <h4>Shop</h4>
+            <ul>
+              <li><a href="#">Ladies</a></li>
+              <li><a href="#">Men</a></li>
+              <li><a href="#">Baby</a></li>
+              <li><a href="#">Kids</a></li>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Magazine</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Corporate Info</h4>
+            <ul>
+              <li><a href="#">Career at H&M</a></li>
+              <li><a href="#">About H&M group</a></li>
+              <li><a href="#">Sustainability H&M Group</a></li>
+              <li><a href="#">Press</a></li>
+              <li><a href="#">Investor relations</a></li>
+              <li><a href="#">Corporate governance</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Help</h4>
+            <ul>
+              <li><a href="#">Customer Service</a></li>
+              <li><a href="#">My H&M</a></li>
+              <li><a href="#">Find a store</a></li>
+              <li><a href="#">Legal & privacy</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Report a scam</a></li>
+              <li><a href="#">Cookie Settings</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Sign up now</h4>
+            <p>Be the first to know about exclusive offers, latest fashion news & style tips!</p>
+            <a href="#">Read more &rarr;</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="logo">
+            <img src="C:\Users\DELL\Downloads\mainlogo.png" alt="Company Logo">
+          </div>
+          <p>The content of this site is copyright-protected and is the property of HARP Pvt . Ltd.</p>
+           <p>MADE IN INDIA </p>
+          <div class="social-icons">
+            <a href="#"><img src="facebook.png" alt="Facebook"></a>
+            <a href="#"><img src= "instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="twitter.png" alt="Twitter"></a>
+            <a href="#"><img src="youtube.png" alt="YouTube"></a>
+            <a href="#"><img src="pinterest.png" alt="Pinterest"></a>
+          </div>
+        </div>
+      </footer>    
+</body>
+</html>
